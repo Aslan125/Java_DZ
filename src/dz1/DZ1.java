@@ -82,7 +82,7 @@ public class DZ1
                         {				
 				if ((i%j) == 0) 
                                 {
-					flag = false;
+                                flag = false;
 				}
 			}
 			if (flag) 
@@ -103,7 +103,17 @@ public class DZ1
         Scanner input=new Scanner(System.in);
         System.out.println("Введите значение (например: 1, 4, 9, 16 и т.д.)");
         double a=input.nextDouble();
-        double q= Math.sqrt(a);
+        
+        double q=0;
+            for (int i = 1; i < a; i++)
+            {  
+                if ((i*i)==a)
+                {
+                    q=i;
+                    break;
+                }
+                
+            }
             if (q*q!=a)
             {
                 System.out.println("Не корректное значение!");

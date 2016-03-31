@@ -109,7 +109,11 @@ public class Matrix
         return _newMatrix;
     }
     
-   
+   private void Print(Matrix mtx)
+   {
+       System.out.println("###Приватный метод Print!!!###\n"+mtx.toString());
+       
+   }
     
     
     @Override
